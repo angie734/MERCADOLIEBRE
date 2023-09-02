@@ -1,23 +1,80 @@
 *{
     margin: 0;
     padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
 }
 .titulo{
     font-size: 24px;
 }
-body{
+.logo{
+    width: 400px;
+    margin-right: 1;
+}
+    body{
     font-family: 'Roboto', sans-serif;
 
 }
 header{
     background-color: #ffe600;
+    height: auto;
 }
 
 nav{
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction:column;
     color:#fff;
 
 }
+main{
+    background-color: #fff;
+    margin-top: 30px;
+    padding: 20px;
+}
+footer{
+    background-color: white;
+}
+input{
+    width: 500px;
+    height: 30px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+}
+.navegador{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.modelodepago{
+    display: flex;
+    align-items: center;
+}
 
+.precio{
+    
+        font-size: 18px;
+        width: 30%;
+    }
+    
+    .descuento{
+        font-size: 16px;
+        width: 70%;
+        display: flex;
+        color: #39b54a;;
+    }
+
+.descripcion{
+    font-size: 16px ;
+    display: flex;
+    padding-left: 20px;
+    padding-top: 10px;
+    color: #b0acac;
+    font-style: italic;
+text-align: center;
+}
 .banner{
     width: 100px;
 }
@@ -33,35 +90,22 @@ nav{
     font-size: 25px;
     font-weight: 700;
 }
-.card{
-    width: 80%;
-    border: 1px #ccc;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-padding: 5px;
-margin: 10px;
+.lupa{
+    background-color: white;
+    position: absolute;
+    height: 30px;
+    width: 40px;
+    border-radius: 0 5px 5px 0;
+    margin: auto;
+    cursor: pointer;
+    border: none;
 }
-.card img{
 
-    width: 100%;
-    
-border-bottom: solid 1px #ccc;
-}
-.detalle{
-    padding: 10px 10px 20px;
-}
-.precio {
-    font-size: 18px;
-font-weight:700;
-font-style: italic;
-text-align: center;
-
-}
-.descuento{
-    font-size: 16px;
-}
-.descripcion {
-    font-size: 16px;
-    line-height: 40px;
+.item{
+    list-style-type: none;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .fa-bars{
     background-color:#1259c3;
@@ -71,29 +115,397 @@ text-align: center;
     margin: 10px;
     text-align: center;
 }
+.categoria{
+    display: flex;
+    justify-content: space-between;
+}
 .hamburguesa
 {
     text-align: center;
 }
-@media(min-width:460px){
+.cafetera{
+    width: auto;
+    border: 1px #ccc;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+margin: 10px;
+}
+.cafetera img{
 
-    .container{
+    width: 100%;
+    
+border-bottom: solid 1px #ccc;
+}
+.smart{
+    width: auto;
+    border: 1px #ccc;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+margin: 10px;
+}
+
+.smart img{
+    width: 100%;
+    
+    border-bottom: solid 1px #ccc;
+}
+
+.samsung{
+    width: auto;
+    border: 1px #ccc;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+margin: 10px;
+}
+
+.samsung img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.macbook{
+    width: auto;
+    border: 1px #ccc;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+margin: 10px;
+}
+
+.macbook img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.fa-truck{
+    background-color:#fafffc;
+    color:#0fb850;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+}
+.detalle{
+    padding: 10px 10px 20px;
+}
+.sectionA{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.sectionB{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.sectionC{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.sectionD{
+    text-align: left;
+    padding: 10px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cajauno{
+    width: 250px;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    border: 0;
+}
+.item{
+    list-style-type: none;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.fa-solid{
+    font-size: 15px;
+}
+.detallesprecio_des{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+@media (max-width: 361px){
+
+    .registro{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .usuario input{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .Fecha{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
 
+    .Fecha input{
+        width: 100%;
     }
-    .card{
-        width: 35%;
-        height: 390%;
+    .Direccion input{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 100%;
     }
-    .card img{
-        width:90% ;
+    .perfil{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .perfil div{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .tipo div input{
+        width: auto;
+    }
+    .division{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    #Electro{
+        color: rgb(255, 0, 200);
+    }
+    .contraseña{
+        margin-bottom: 10px;
+    }
+    .contraseña input{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .base input{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .Botones{
+        display: flex;
+        flex-direction: column;
+    }
+    .Botones button{
+        background-color: #1259c3;
+        border-radius: 5px;
+        border: none;
+        height: 40px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    .Botones button a{
+        color: white;
+        text-decoration: none;
     }
 }
-@media(min-width:830px){
-    .card{
-    height: auto;
-    max-width: 390px;
 
+@media (max-width: 361px){
+    .categoria{
+        display: none;
     }
+    .navegador{
+        justify-content: center;
+    }
+    .logo{
+        width: 150px;
+    }
+    nav{
+        align-items: center;
+    }
+    input{
+        width: 50%;
+    }
+    .lupa{
+        position: absolute;
+    }
+    .fa-bars{
+        color: white;
+        font-size: 2em;
+    }
+    .burger-menu{
+        display: flex;
+        background-color:#1c63cc;
+        width: 10px;
+        height: 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+    .compra{
+        padding: 20px;
+    }
+
+    .terminos{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .selectionD{
+        text-align: left;
+        padding: 10px;
+    }
+   
+    .nombres{
+        width: 100%;
+    }
+    .nombres input{
+        width: 100%;
+    }
+    .password{
+        width: 100%;
+    }
+    .password input{
+        width: 100%;
+    }
+    .envio{
+        width: 100%;
+    }
+    .envio button{
+        width: 100%;
+        background-color: #1c63cc;
+        border-radius: 5px;
+        border: none;
+        height: 40px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+}
+     
+
+.fa-credit-card{
+    
+    background-color:#1c63cc;
+    color:#fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+}
+.fa-gift{
+
+    background-color:#1c63cc;
+    color:#fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+}
+.fa-user-shield{
+    background-color:#1c63cc;
+    color:#fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+
+.clave input{
+    margin-right: 40px;
+}
+.Botones{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+
+.Botones button{
+    width: 500px;
+    height: 40px;
+    background-color: #1c63cc;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.Botones button a{
+    text-decoration: none;
+    color: white;
+}
+
+.sing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nombres div{
+    margin-top: 20px;
+}
+.envio button{
+    width: 500px;
+    height: 40px;
+    background-color:#1c63cc;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.envio button a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.burger-menu{
+    display: none;
+}
+
+.registro{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+.usuario input{
+    margin-right: 40px;
+}
+.Fecha{
+    margin-top: 15px;
+    margin-right: 40px;
+}
+.Direcction{
+    display: flex;
+    align-items: flex-end;
+}
+
+.interes{
+    display: flex;
+    align-items: center;
+}
+.base{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
